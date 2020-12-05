@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,338 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Serene" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-12-05 at 4.11.10 PM" translatesAutoresizingMaskIntoConstraints="NO" id="l6a-Fy-m7j">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sYv-ER-W5E">
+                                <rect key="frame" x="108" y="424" width="198" height="374"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iLw-6c-h3u">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="86"/>
+                                        <state key="normal" title="Help" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eno-mN-4fE" kind="presentation" modalPresentationStyle="fullScreen" id="ms6-W2-AsN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J97-Od-AP0">
+                                        <rect key="frame" x="0.0" y="96" width="198" height="86"/>
+                                        <state key="normal" title="Learn" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Dif-lF-e6r" kind="presentation" modalPresentationStyle="fullScreen" id="TVX-7Q-NL2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odp-cK-o6c">
+                                        <rect key="frame" x="0.0" y="192" width="198" height="86"/>
+                                        <state key="normal" title="Chat" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1f-vf-4Pn">
+                                        <rect key="frame" x="0.0" y="288" width="198" height="86"/>
+                                        <state key="normal" title="Destress" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="XFz-66-Do9" kind="presentation" modalPresentationStyle="fullScreen" id="y3i-Dj-UoL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-12-05 at 4.13.55 PM" translatesAutoresizingMaskIntoConstraints="NO" id="MHs-Qd-cQC">
+                                <rect key="frame" x="87" y="89" width="240" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="235" id="8sh-j9-Yuz"/>
+                                    <constraint firstAttribute="width" constant="240" id="D2h-vB-luH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sYv-ER-W5E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="36M-yL-79W"/>
+                            <constraint firstItem="MHs-Qd-cQC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="3CI-cV-ySx"/>
+                            <constraint firstItem="MHs-Qd-cQC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="8j8-qU-NWG"/>
+                            <constraint firstItem="l6a-Fy-m7j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="98k-zW-l8d"/>
+                            <constraint firstItem="l6a-Fy-m7j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A2O-MX-i8Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MHs-Qd-cQC" secondAttribute="trailing" constant="87" id="Gv4-QD-N10"/>
+                            <constraint firstItem="l6a-Fy-m7j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L3X-hg-Dle"/>
+                            <constraint firstItem="sYv-ER-W5E" firstAttribute="top" secondItem="MHs-Qd-cQC" secondAttribute="bottom" constant="100" id="ajr-Sa-Dv1"/>
+                            <constraint firstItem="MHs-Qd-cQC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzD-cS-drR"/>
+                            <constraint firstAttribute="bottom" secondItem="l6a-Fy-m7j" secondAttribute="bottom" id="qAi-M2-WfS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tY4-bD-Ke3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="82X-fm-8pn">
+            <objects>
+                <viewController id="eno-mN-4fE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dp8-Ry-k4g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-12-05 at 4.11.10 PM" translatesAutoresizingMaskIntoConstraints="NO" id="gG4-iH-viV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4P-h6-p7k">
+                                <rect key="frame" x="124.5" y="104" width="165" height="46.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CCc-X7-f3f">
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="1DD-Pm-8CO"/>
+                                    <constraint firstAttribute="height" constant="60" id="H9I-m2-tXS"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="asP-hz-dW9"/>
+                                    <constraint firstAttribute="width" constant="60" id="sWl-CB-7uh"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Screen Shot 2020-12-05 at 4.22.01 PM"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="r9r-KP-b8j"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Uvy-t5-2VW">
+                                <rect key="frame" x="30" y="180" width="354" height="216"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friends and Family" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="75U-NY-gzp">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Meredith Hira Laxmi Priyanka Rachel Veda Simran Audrey Johnny Naoki" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-tE-cx9">
+                                        <rect key="frame" x="0.0" y="31" width="354" height="185"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VRg-ud-oKG">
+                                <rect key="frame" x="30" y="428" width="354" height="216"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Contacts" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6J-5A-9Yu">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RNN-aG-kKh">
+                                        <rect key="frame" x="0.0" y="31" width="354" height="185"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Suicide Prevention Hotline Crisis Services 911 Therapist Jack Smith Counselor Patty Adams Thursday's Child National Youth Advocacy Hotline</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VRg-ud-oKG" firstAttribute="leading" secondItem="vhM-Sh-OTi" secondAttribute="leading" constant="30" id="A4c-t4-DzL"/>
+                            <constraint firstItem="Uvy-t5-2VW" firstAttribute="centerX" secondItem="dp8-Ry-k4g" secondAttribute="centerX" id="GZR-dA-JFb"/>
+                            <constraint firstItem="VRg-ud-oKG" firstAttribute="top" secondItem="Uvy-t5-2VW" secondAttribute="bottom" constant="30" id="NMF-JX-Br8"/>
+                            <constraint firstItem="v4P-h6-p7k" firstAttribute="top" secondItem="vhM-Sh-OTi" secondAttribute="top" constant="60" id="Qwz-ct-TJ7"/>
+                            <constraint firstItem="CCc-X7-f3f" firstAttribute="top" secondItem="vhM-Sh-OTi" secondAttribute="top" id="SDe-3y-FGL"/>
+                            <constraint firstItem="Uvy-t5-2VW" firstAttribute="top" secondItem="v4P-h6-p7k" secondAttribute="bottom" constant="30" id="ac2-zk-nny"/>
+                            <constraint firstItem="v4P-h6-p7k" firstAttribute="centerX" secondItem="dp8-Ry-k4g" secondAttribute="centerX" id="eMd-cI-7Yh"/>
+                            <constraint firstItem="vhM-Sh-OTi" firstAttribute="trailing" secondItem="CCc-X7-f3f" secondAttribute="trailing" constant="20" id="jBP-wH-Rsb"/>
+                            <constraint firstItem="vhM-Sh-OTi" firstAttribute="trailing" secondItem="Uvy-t5-2VW" secondAttribute="trailing" constant="30" id="ksD-82-nxo"/>
+                            <constraint firstItem="VRg-ud-oKG" firstAttribute="centerX" secondItem="dp8-Ry-k4g" secondAttribute="centerX" id="mbp-Ve-eZ4"/>
+                            <constraint firstItem="vhM-Sh-OTi" firstAttribute="trailing" secondItem="VRg-ud-oKG" secondAttribute="trailing" constant="30" id="o4D-C8-Xob"/>
+                            <constraint firstItem="Uvy-t5-2VW" firstAttribute="leading" secondItem="vhM-Sh-OTi" secondAttribute="leading" constant="30" id="tko-dd-3vC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vhM-Sh-OTi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DQ3-Km-l9W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zvw-d4-JWZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="853.62318840579712" y="113.83928571428571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oCO-S9-7JU">
+            <objects>
+                <viewController id="Dif-lF-e6r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="veZ-Mk-w85">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-12-05 at 4.11.10 PM" translatesAutoresizingMaskIntoConstraints="NO" id="DMs-LF-UgQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Va-MF-PKz">
+                                <rect key="frame" x="20" y="124" width="374" height="180"/>
+                                <string key="text">Welcome to Your Learn Page! We have all struggled with our emotions at time or the other, and this Page is built to give you more infomation on how to better handle them.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ylf-a2-G43">
+                                <rect key="frame" x="108" y="384" width="198" height="278"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wa-yb-46F">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="86"/>
+                                        <state key="normal" title="Stress" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRv-pO-hdQ">
+                                        <rect key="frame" x="0.0" y="96" width="198" height="86"/>
+                                        <state key="normal" title="Anxiety" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-2G-rMJ">
+                                        <rect key="frame" x="0.0" y="192" width="198" height="86"/>
+                                        <state key="normal" title="Depression" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGc-a1-K3Y">
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="YrH-UJ-nqA"/>
+                                    <constraint firstAttribute="height" constant="60" id="pUA-vX-3tc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Screen Shot 2020-12-05 at 4.22.01 PM"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="af8-Ez-KU3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7Va-MF-PKz" firstAttribute="leading" secondItem="lu6-Ga-0jp" secondAttribute="leading" constant="20" id="2TD-bd-Z0e"/>
+                            <constraint firstItem="Ylf-a2-G43" firstAttribute="centerX" secondItem="veZ-Mk-w85" secondAttribute="centerX" id="5kq-jw-4OD"/>
+                            <constraint firstItem="7Va-MF-PKz" firstAttribute="centerX" secondItem="veZ-Mk-w85" secondAttribute="centerX" id="K3q-kL-pUe"/>
+                            <constraint firstItem="7Va-MF-PKz" firstAttribute="top" secondItem="BGc-a1-K3Y" secondAttribute="bottom" constant="20" id="LsF-fO-ggR"/>
+                            <constraint firstItem="lu6-Ga-0jp" firstAttribute="trailing" secondItem="7Va-MF-PKz" secondAttribute="trailing" constant="20" id="M8y-2y-pzx"/>
+                            <constraint firstItem="lu6-Ga-0jp" firstAttribute="trailing" secondItem="BGc-a1-K3Y" secondAttribute="trailing" constant="20" id="SCU-XR-nRq"/>
+                            <constraint firstItem="BGc-a1-K3Y" firstAttribute="top" secondItem="lu6-Ga-0jp" secondAttribute="top" id="UUe-DF-JBC"/>
+                            <constraint firstItem="Ylf-a2-G43" firstAttribute="top" secondItem="7Va-MF-PKz" secondAttribute="bottom" constant="80" id="uCp-O7-tFQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lu6-Ga-0jp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXs-g7-Sbj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bqI-hE-pxX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1489.8550724637682" y="112.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Y7j-rG-gIT">
+            <objects>
+                <viewController id="XFz-66-Do9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H3V-NP-Gb2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2020-12-05 at 4.11.10 PM" translatesAutoresizingMaskIntoConstraints="NO" id="8xB-06-p4Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bP-n9-Qhn">
+                                <rect key="frame" x="20" y="124" width="374" height="180"/>
+                                <string key="text">Welcome to your tips to Destress page! We all have been stressed at time or the other, and this page is built to give you quick excersises to help you cope with your stress.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3i-vC-Vwi">
+                                <rect key="frame" x="334" y="44" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="27Q-Bg-gRJ"/>
+                                    <constraint firstAttribute="width" constant="60" id="fvs-Og-QGj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Screen Shot 2020-12-05 at 4.22.01 PM"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="WY3-aD-uDj"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zBl-bA-yqr">
+                                <rect key="frame" x="108" y="354" width="198" height="374"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nb-eS-1fS">
+                                        <rect key="frame" x="0.0" y="0.0" width="198" height="86"/>
+                                        <state key="normal" title="Breathing Exercises" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avk-GQ-CdL">
+                                        <rect key="frame" x="0.0" y="96" width="198" height="86"/>
+                                        <state key="normal" title="Journal" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7po-b5-x9I">
+                                        <rect key="frame" x="0.0" y="192" width="198" height="86"/>
+                                        <state key="normal" title="Chat" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JnW-1o-Uyb">
+                                        <rect key="frame" x="0.0" y="288" width="198" height="86"/>
+                                        <state key="normal" title="Relax" backgroundImage="Screen Shot 2020-12-05 at 4.11.56 PM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5bP-n9-Qhn" firstAttribute="top" secondItem="Y3i-vC-Vwi" secondAttribute="bottom" constant="20" id="0Oh-fN-ZwZ"/>
+                            <constraint firstItem="zBl-bA-yqr" firstAttribute="centerX" secondItem="H3V-NP-Gb2" secondAttribute="centerX" id="1Xm-jZ-BaG"/>
+                            <constraint firstItem="Y3i-vC-Vwi" firstAttribute="top" secondItem="Jsg-Nl-YNi" secondAttribute="top" id="JbO-74-Ygg"/>
+                            <constraint firstItem="Jsg-Nl-YNi" firstAttribute="trailing" secondItem="Y3i-vC-Vwi" secondAttribute="trailing" constant="20" id="q9v-9q-JBQ"/>
+                            <constraint firstItem="Jsg-Nl-YNi" firstAttribute="trailing" secondItem="5bP-n9-Qhn" secondAttribute="trailing" constant="20" id="t3U-cK-EW8"/>
+                            <constraint firstItem="zBl-bA-yqr" firstAttribute="top" secondItem="5bP-n9-Qhn" secondAttribute="bottom" constant="50" id="uZJ-N3-bOq"/>
+                            <constraint firstItem="5bP-n9-Qhn" firstAttribute="leading" secondItem="Jsg-Nl-YNi" secondAttribute="leading" constant="20" id="wBX-0L-fhq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Jsg-Nl-YNi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E6E-HT-C3u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVh-ya-Fjz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2119" y="113"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="r9r-KP-b8j"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Screen Shot 2020-12-05 at 4.11.10 PM" width="432" height="220"/>
+        <image name="Screen Shot 2020-12-05 at 4.11.56 PM" width="198" height="86"/>
+        <image name="Screen Shot 2020-12-05 at 4.13.55 PM" width="400" height="396"/>
+        <image name="Screen Shot 2020-12-05 at 4.22.01 PM" width="80" height="80"/>
+    </resources>
 </document>
