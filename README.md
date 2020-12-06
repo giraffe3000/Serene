@@ -16,7 +16,7 @@
 > * A big challenge was the time constraints that we had. Because this hackathon took place during only one weekend, we weren't able to make a complete version of the app and add many things that we planned to add, like the AI-based chatbot feature. 
 > * Another big challenge was that since we were collaborating online, it was hard to coordinate meetings because of all the different time zones that our team was based in.
 
-## Accomplishments that we’re proud of
+### Accomplishments that we’re proud of
 > * We are proud that we were able to make a functioning app in the short time span that we were given. 
 > * We are also proud of the design and colors we chose to make the final app look calming and appealing. 
 > * Something that was challenging was collecting data from actual teens and we made a survey and received more than 48 responses :)
